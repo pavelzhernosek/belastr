@@ -1,0 +1,103 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "sections/header";
+@import "sections/services";
+@import "sections/repairs";
+@import "sections/service";
+@import "sections/footer";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+
+	input,
+	textarea {
+		border: #666 1px solid;
+		outline: none;
+
+		&:focus:required:invalid {
+			border-color: red;
+		}
+
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+.services__title,
+.repairs__title,
+.service__title {
+	color: #454545;
+	font-size: 21px;
+	letter-spacing: 0.035em;
+	font-weight: normal;
+}
+
+.services__desc,
+.repairs__desc,
+.service__desc {
+	color: #737373;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.35px;
+}
+
+.button {
+	padding-top: 10px;
+	width: 194px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #92b5db;
+	font-size: 13px;
+	letter-spacing: 0.33px;
+
+	&:active {
+		border: 2px solid green;
+	}
+	&:hover {
+		background-color: rgba(184, 183, 183, 0.356);
+	}
+
+	.services__link,
+	.repairs__link,
+	.service__link {
+		text-decoration: none;
+		color: #2378c0;
+	}
+}
+
+.line {
+	background-color: #2171bc;
+	margin: 0 auto;
+	width: 81px;
+	height: 2px;
+}
+
+@import "media"; // Always at the end

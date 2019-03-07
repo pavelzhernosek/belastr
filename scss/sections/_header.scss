@@ -1,0 +1,89 @@
+header.page__header {
+	background: url("header.png") no-repeat center top 0px /cover;
+	min-height: 600px;
+
+	.nav__wrapper {
+		padding-top: 25px;
+		padding-bottom: 20px;
+		background-color: rgba($color: #000000, $alpha: 0.5);
+	}
+
+	.header__logo {
+		font-family: "OpenSansBold", sans-serif;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 24px;
+		line-height: 19px;
+		letter-spacing: 0.6px;
+	}
+
+	.header__nav {
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 0.33px;
+	}
+
+	.mobile_menu_click {
+		display: none;
+	}
+
+	.icon {
+		display: none;
+	}
+
+	.nav__link {
+		color: #b5b5b5;
+		padding-bottom: 20px;
+		line-height: 1.66;
+		margin-right: 50px;
+		text-decoration: none;
+
+		&:hover {
+			border-bottom: 2px solid #b5b5b5;
+		}
+
+		&:active {
+			color: #b5b5b5;
+			border-bottom: 2px solid #f3900e;
+		}
+
+		&:focus {
+			color: #f3900e;
+		}
+	}
+
+	.header__title {
+		padding-top: 130px;
+		text-align: center;
+		color: #ffffff;
+		font-family: "OpenSansSemiBold", sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.66;
+		letter-spacing: 0.025em;
+	}
+
+	.header__button {
+		text-align: center;
+		margin-top: 80px;
+
+		.contact__link {
+			text-decoration: none;
+			padding: 20px 15px;
+			color: #ffffff;
+			background-color: #1e69b8;
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 1.63;
+			letter-spacing: 0.025em;
+
+			&:hover {
+				background-color: #1e68b881;
+			}
+
+			&:focus {
+				border: 2px solid #f7f5f2;
+			}
+		}
+	}
+}
