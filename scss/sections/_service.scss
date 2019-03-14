@@ -12,7 +12,7 @@
 	}
 
 	.service__left-block {
-		background: url(/img/service.png) no-repeat;
+		background: url(../img/service.png) no-repeat;
 		background-size: 100% 100%;
 		// img{
 		// 	width: 100%;
@@ -51,7 +51,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		padding: 0;
-		list-style: square url(/img/icons/icon.png);
+		list-style: square url(../img/icons/icon.png);
 
 		.brands__item {
 			width: 20.33%;

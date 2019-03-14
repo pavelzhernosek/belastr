@@ -31,19 +31,19 @@
 <body>
 
 	<!-- Custom HTML -->
-	<header class="page__header">
+	<header class="page__header" id="header">
 		<div class="nav__wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-2 col-lg-3 col-md-4">
-						<div class="header__logo">“БелАстр”</div>
-					</div>
-					<a href="#" class="mobile_menu_click">&#9776;</a>
-					<div class="col-xl-4 col-lg-9 col-md-8">
-						<nav class="header__nav" id="header-nav">
-							<a href="#" class="nav__link nav__link--active">Услуги</a>
-							<a href="#" class="nav__link">Компания</a>
-							<a href="#" class="nav__link">Контакты</a>
+					<div class="col-lg-12">
+						<nav class="navbar" id="navbar">
+							<a href="#" id="js-navbar-toggle" class="navbar-toggle"><span></span></a>
+							<a class="header__logo">“БелАстр”</a>
+							<ul class="nav__list" id="js-menu">
+								<li class="nav__item"><a href="#services" class="nav__link nav__link--active">Услуги</a></li>
+								<li class="nav__item"><a href="#repairs" class="nav__link">Компания</a></li>
+								<li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+							</ul>
 						</nav>
 					</div>
 				</div>
@@ -62,7 +62,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
-					<div class="header__button">
+					<div class="header__button button">
 						<a href="#" class="contact__link"> +375(29)636-09-30</a>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 	</header>
 
 	<main>
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -116,7 +116,7 @@
 			</div>
 		</section>
 
-		<section class="repairs">
+		<section class="repairs" id="repairs">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-12">
@@ -229,7 +229,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-3 col-lg-6 col-md-6">
-					<div class="footer__contacts">
+					<div class="footer__contacts" id="contacts">
 						<h2 class="footer__title contacts">НАШИ КОНТАКТЫ</h2>
 						<div class="footer__line"></div>
 						<address class="footer__address">
@@ -286,9 +286,9 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
 	<script src="js/scripts.min.js"></script>
-
 </body>
 
 </html>

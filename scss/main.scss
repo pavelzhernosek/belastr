@@ -69,6 +69,7 @@ strong {
 }
 
 .button {
+	cursor: pointer;
 	padding-top: 10px;
 	width: 194px;
 	height: 40px;
@@ -82,12 +83,23 @@ strong {
 		border: 2px solid green;
 	}
 	&:hover {
-		background-color: rgba(184, 183, 183, 0.356);
+		a{
+			// font-weight: bold;
+			color: #fff;
+		}
+		.repairs__link{
+			color: #FFF;
+		}
+		background-color: #1e69b8;
 	}
 
 	.services__link,
 	.repairs__link,
 	.service__link {
+		// &:hover{
+		// 	font-weight: bold;
+		// 	color: #fff;
+		// }
 		text-decoration: none;
 		color: #2378c0;
 	}
