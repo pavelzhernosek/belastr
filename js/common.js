@@ -1,9 +1,8 @@
-menu.onclick = function myFunction() {
-	var x = document.getElementById("header-nav");
+let nav__list = document.getElementById('js-menu');
 
-	if (x.className === "header__nav") {
-		x.className += " responsive";
-	} else {
-		x.className = "header__nav";
-	}
-}
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+	nav__list.classList.toggle('active');
+	navBarToggle.classList.toggle('menu-btn_active');
+});

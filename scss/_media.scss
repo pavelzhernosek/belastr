@@ -9,10 +9,6 @@
 		display: none;
 	}
 
-	.header__nav {
-		margin-right: -100px;
-	}
-
 	.service__brands {
 		.brands__list {
 			.brands__item {
@@ -76,8 +72,75 @@
 // ≥768px
 @include media-breakpoint-down(sm) {
 	.page__header {
-		.header__nav {
-			display: none;
+		.nav__wrapper {
+			width: 100%;
+			.navbar {
+				position: relative;
+				width: 100%;
+
+				.navbar-toggle {
+					display: block;
+					position: absolute;
+					top: -50%;
+					right: 0%;
+					cursor: pointer;
+					font-size: 24px;
+				}
+
+				.nav__list {
+					text-align: center;
+					width: 100%;
+					position: absolute;
+					transition: 0.5s;
+					top: 180%;
+					left: 0%;
+					background-color: rgba(20, 20, 20, 0.95);
+					list-style-type: none;
+					display: none;
+					padding: 0;
+					margin: 0;
+					z-index: 10;
+
+					.nav__item {
+						width: 100%;
+						text-align: center;
+						margin: 35px auto;
+
+						&:hover {
+							// opacity: 0.5;
+						}
+
+						&:active {
+							opacity: 0.5;
+							color: #ffff;
+
+						}
+
+						&:focus {
+							opacity: 0.5;
+							color: #ffff;
+							border: 1px solid white;
+						}
+					}
+
+					.nav__link {
+						text-transform: uppercase;
+						margin-left: 20px;
+						color: #797777;
+						font-family: 'PoppinsMedium', sans-serif;
+						font-size: 28px;
+						line-height: 1.35;
+						text-decoration: none;
+
+						&:hover {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+		.active{
+			display: block!important;
 		}
 	}
 
@@ -156,9 +219,11 @@
 					flex-direction: column;
 					align-items: center;
 					text-align: left;
-					li:nth-of-type(5n){
+
+					li:nth-of-type(5n) {
 						margin-bottom: 20px;
 					}
+
 					.brands__item {
 						width: 35%;
 						color: #737373;
@@ -169,7 +234,8 @@
 						margin-left: 0px;
 					}
 				}
-				.service__button{
+
+				.service__button {
 					margin-top: 80px;
 					margin-bottom: 100px;
 				}
@@ -177,25 +243,28 @@
 		}
 	}
 
-	.services{
-		.services__cards{
-			.services__card{
+	.services {
+		.services__cards {
+			.services__card {
 				width: 100%;
 			}
 		}
 	}
 
-	.page__footer{
+	.page__footer {
 		position: relative;
 		padding-bottom: 200px;
-		.footer__contacts{
+
+		.footer__contacts {
 			margin: 0;
-			.footer__social{
+
+			.footer__social {
 				position: absolute;
 				bottom: -100%;
 			}
 		}
-		.footer__working-hours{
+
+		.footer__working-hours {
 			margin-top: -50px;
 		}
 	}
